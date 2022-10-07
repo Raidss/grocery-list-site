@@ -20,20 +20,18 @@ body {
     width: 100%;
     height: 2px;
     background-color: black;
+    margin-bottom: 10px;
 } 
 
 #header {
     text-align: center;
 }
 
-#checkboxes {
-    list-style: none;
-    padding: 0
-}
 
 .box {
     background-color: #24262C;
     display: inline-block;
+    border-radius: 10px;
 }
 
 #main-left{
@@ -42,6 +40,7 @@ body {
     overflow: hidden;
     position: relative;
     height: 250px;
+    
 }
 
 #main-right{
@@ -57,4 +56,12 @@ body {
     display: block;
     margin: 7px 7px;
     background-color: #2A2B2F;
+    border-radius: 10px;
+    padding-left: 10px;
 }
+
+#checkboxes {
+    list-style: none;
+    padding: 0
+}
+
