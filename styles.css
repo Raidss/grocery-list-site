@@ -2,9 +2,17 @@ h1 {
     text-align: center;
 }
 
+.top-header {
+    text-align: left;
+}
+
 body {
     width: 95vw;
-    margin: 0 auto;
+    padding: 5px;
+    background-color: #2A2B2F;
+    border-style: solid;    
+    border-color: white;
+    border-width: 1px;
 }
 
 #divide {
@@ -14,17 +22,38 @@ body {
 } 
 
 #header {
-    text-align: center
-}
-
-#list {
-    display: block;
-    width: 50vw;
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: rgba(53, 116, 130, 0.791);
+    text-align: center;
 }
 
 #checkboxes {
     list-style: none;
+    padding: 0
+}
+
+.box {
+    background-color: #24262C;
+    display: inline-block;
+}
+
+#main-left{
+    margin: unset;
+    width: 65%;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+#main-right{
+    margin: unset;
+    width: 30%;
+    max-width: 400px;
+    position: relative;
+    float: right;
+
+}
+
+.inner-box {
+    display: block;
+    margin: 7px 7px;
+    background-color: #2A2B2F;
 }
