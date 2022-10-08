@@ -6,6 +6,7 @@
     margin-right: auto;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    overflow: hidden;
     
 
     
@@ -41,10 +42,8 @@
 
 /* Hide the default checkbox */
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
+    position: absolute;overflow: hidden;
+    cursor: pointer;overflow: hidden;
     width: 0;
    }
    
@@ -144,3 +143,5 @@
              transform: scale(1);
     }
    }
+
+   

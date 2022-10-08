@@ -75,21 +75,23 @@ nav {
     background: #24262C;
     box-shadow:  5px 5px 25px #111215,
              -5px -5px 25px #373a43;
+    overflow: hidden;
     
 }
 
 #main-left{
     margin: unset;
-    width: 65%;
+    width: 55%;
     overflow: hidden;
     position: relative;
     height: 250px;
+    margin-bottom: 50px;
     
 }
 
 #main-right{
     margin: unset;
-    width: 30%;
+    width: 35%;
     max-width: 400px;
     position: relative;
     float: right;
@@ -251,4 +253,8 @@ nav {
      -webkit-transform: scale(1);
              transform: scale(1);
     }
+   }
+
+   .resize {
+    resize: both;
    }
