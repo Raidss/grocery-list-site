@@ -72,6 +72,10 @@ nav {
     background-color: #24262C;
     display: inline-block;
     border-radius: 10px;
+    background: #24262C;
+    box-shadow:  5px 5px 25px #111215,
+             -5px -5px 25px #373a43;
+    
 }
 
 #main-left{
@@ -89,6 +93,7 @@ nav {
     max-width: 400px;
     position: relative;
     float: right;
+    
 
 }
 
@@ -127,3 +132,123 @@ a:active {
 nav {
     text-align: left;
 }
+
+
+
+.list-text {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    bottom: 1px;
+    font-size: 25px;
+
+}
+
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .container {
+    width: 95%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #ccc;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-flex;
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .container input:checked ~ .checkmark {
+    background-color: #47da99;
+    -webkit-animation: pop 0.5s;
+            animation: pop 0.5s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .container input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .container .checkmark:after {
+    left: 0.3em;
+    top: 0.1em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+   }
+   
+   @-webkit-keyframes pop {
+    0% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+    }
+   
+    50% {
+     -webkit-transform: scale(0.9);
+             transform: scale(0.9);
+    }
+   
+    100% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+    }
+   }
+   
+   @keyframes pop {
+    0% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+    }
+   
+    50% {
+     -webkit-transform: scale(0.9);
+             transform: scale(0.9);
+    }
+   
+    100% {
+     -webkit-transform: scale(1);
+             transform: scale(1);
+    }
+   }
