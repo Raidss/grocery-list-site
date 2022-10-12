@@ -58,8 +58,9 @@ body {
     z-index: 2;
 }
 
-#header {
-    text-align: center;
+#header-container {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -79,8 +80,14 @@ nav {
     
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 #main-left{
-    margin: unset;
+    margin: 0;
     width: 55%;
     overflow: hidden;
     position: relative;

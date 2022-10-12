@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section id="header"><h1 class="top-header">Welcome Back</h1>
+    <div id="header-container">
+      <h1 class="top-header">Welcome Back</h1>
       <nav>
         <a href="/index.html" id="onlink">Dashboard</a>
         <a href="/list.html">Grocery List</a>
         <a href="/data.html">Data</a>
       </nav>
-    </section>
+    </div>
     <div id="divide"></div>
     <div id="div-onlink-dashboard"></div>
 
-    <section id="main-left" class="box resize">
+    <div class="content-container">
+    <div id="main-left" class="box resize">
       <div id="inventory" class="inner-box">
         <h3>Inventory</h3>
       </div>
       <div class="inner-box">
         <h3>Section</h3>
       </div>
-    </section>
-    <section id="main-right" class="box resize">
+    </div>
+
+    <div id="main-right" class="box resize">
       <div id="list" class="inner-box">
         <h2 id="list-header">List</h2>
         <ul id="checkboxes">
@@ -43,7 +46,8 @@
           </label></li>
         </ul> 
       </div>
-  </section>
+    </div>
+  </div>
   </body>
 </html>
 
